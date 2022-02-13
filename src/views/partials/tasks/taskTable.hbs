@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>TITLE</th>
+      <th>Description</th>
+      <th>Operations</th>
+    </tr>
+  </thead>
+  {{#each tasks}}
+    <tr>
+      <td>{{@index}}</td>
+      <td>{{title}}</td>
+      <td>{{description}}</td>
+      <td>
+        <button>Edit</button>
+        <button>Delete</button>
+        <button>Done</button>
+      </td>
+    </tr>
+  {{/each}}
+</table>

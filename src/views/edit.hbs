@@ -1,29 +1,10 @@
 <h3>EDIT</h3>
-<p>Nulla do mollit culpa veniam laborum ipsum pariatur excepteur officia
-  officia. Occaecat reprehenderit commodo et magna eiusmod sunt labore culpa
-  consectetur officia enim ut. Et non elit est et adipisicing ea sint mollit
-  ullamco sunt est voluptate est. Qui qui duis non mollit excepteur esse ad.
-  Esse in esse esse laborum quis consequat. Pariatur sint voluptate qui aliqua
-  ad fugiat. Sint sunt tempor nulla in. Mollit quis anim aliqua et ullamco do
-  id. Lorem veniam non fugiat culpa commodo fugiat reprehenderit commodo
-  consequat fugiat. Lorem velit officia ut eu id do consectetur eu dolore magna.
-  Et commodo ex sit aliquip adipisicing in proident veniam adipisicing et nulla.
-  Laborum in ex cillum incididunt ipsum eu nulla labore consequat nostrud. Magna
-  aute cupidatat fugiat in elit. Nostrud aute culpa excepteur ut ullamco irure
-  duis esse esse culpa anim ipsum. Consequat duis consectetur cillum deserunt
-  sit officia exercitation id ad quis. Consectetur incididunt eiusmod dolor
-  exercitation irure. Reprehenderit aute in fugiat est enim enim Lorem nisi aute
-  occaecat pariatur nisi. Commodo voluptate dolore est labore consectetur
-  incididunt ipsum nulla. Sint commodo mollit tempor do cupidatat sit proident
-  irure minim eu sunt ut ea magna. Minim proident velit deserunt adipisicing ad
-  laborum anim consequat. Duis amet consequat do laborum eiusmod exercitation
-  veniam sunt pariatur sunt. Ad magna sunt eiusmod cillum ad irure nostrud
-  velit. Veniam sit laboris cupidatat consectetur magna elit laboris est mollit
-  reprehenderit nisi incididunt. Dolore minim duis cupidatat incididunt deserunt
-  duis anim consequat ipsum. Do et aliquip aliqua in qui consequat exercitation
-  duis ipsum. In tempor labore enim exercitation occaecat. Enim duis culpa
-  occaecat sint elit do. Cillum dolor proident pariatur mollit fugiat excepteur
-  culpa eu ut duis ad excepteur. Sunt aute irure do in anim cillum ullamco ad
-  labore magna. Ea sit irure velit Lorem officia nisi enim aute in incididunt ea
-  eiusmod est labore. Sunt officia sit ut reprehenderit duis laborum. Minim esse
-  est qui esse commodo nostrud tempor irure officia anim sit et.</p>
+<form action="/edit/{{task._id}}" method="POST">
+  <input type="text" name="title" placeholder="Title" value="{{task.title}}" />
+  <textarea
+    name="description"
+    placeholder="Add a Description"
+    rows="3"
+  >{{task.description}}</textarea>
+  <button>Actualizar</button>
+</form>

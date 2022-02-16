@@ -49,5 +49,16 @@ router.get("/Delete/:id", async (req, res) => {
   await Task.findByIdAndDelete(id);
   res.redirect("/");
 });
+router.get("/toggleDone/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    const task = await Task.findById(id);
+    task.done = !task.done;
+    await task.save();
+    res.redirect("/");
+  } catch (err) {
+    console.log(err, "ERRORRRRRRRRRRR----");
+  }
+});
 
 export default router;
